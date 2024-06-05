@@ -1,0 +1,23 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let Geo of CircularGeofences">
+            <div class="card mb-4">
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">Id : {{ Geo.Id }}</li>
+                    <li class="list-group-item">Radius : {{ Geo.Radius }}</li>
+                    <li class="list-group-item">Latitude : {{ Geo.Latitude }}</li>
+                    <li class="list-group-item">Longitude : {{ Geo.Longitude }}</li>
+                    <li class="list-group-item">AddedDate : {{ Geo.AddedDate }}
+                    <li class="list-group-item">GeofenceType : {{ Geo.GeofenceType }}
+                    <li class="list-group-item">FillColor : {{ Geo.FillColor }}</li>
+                    <li class="list-group-item">FillOpacity : {{ Geo.FillOpacity }} </li>
+                    <li class="list-group-item">StrockColor : {{ Geo.StrockColor }}</li>
+                    <li class="list-group-item">StrockOpacity : {{ Geo.StrockOpacity }}</li>
+                    <li class="list-group-item">StrockWeight : {{ Geo.StrockWeight }}</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let vehicle of vehicles">
+            <div class="card mb-4">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">vehicle ID : {{ vehicle.VehicleId }}</li>
+                    <li class="list-group-item">vehicle Type : {{ vehicle.VehicleType }}</li>
+                    <li class="list-group-item">
+                        vehicle Number : {{ vehicle.VehicleNumber }}
+                    </li>
+                    <button class="update-button" (click)="updatevehicle(vehicle)">
+                        Update
+                    </button>
+                    <button class="delete-button" (click)="deletevehicle(vehicle.VehicleId)">
+                        Delete
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

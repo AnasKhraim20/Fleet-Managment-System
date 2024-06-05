@@ -1,0 +1,20 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let route of RouteHistory">
+            <div class="card mb-4">
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">vehicleId : {{ route.VehicleId }}</li>
+                    <li class="list-group-item">vehicleDirection : {{ route.VehicleDirection }}</li>
+                    <li class="list-group-item">status : {{ route.Status }}
+                    <li class="list-group-item">vehicleSpeed : {{ route.VehicleSpeed }}</li>
+                    <li class="list-group-item">epoch : {{ route.Epoch }}</li>
+                    <li class="list-group-item">latitude : {{ route.Latitude }}
+                    <li class="list-group-item">longitude : {{ route.Longitude }}
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

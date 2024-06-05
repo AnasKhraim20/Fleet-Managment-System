@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="form-container">
+        <h2>Add Rectangular Geofence</h2>
+        <form [formGroup]="rectangulargeofenceForm" (ngSubmit)="onSubmit()">
+            <label for="North">North: </label>
+            <input id="North" type="text" formControlName="North" />
+
+            <label for="South">South: </label>
+            <input id="South" type="text" formControlName="South" />
+
+            <label for="West">West: </label>
+            <input id="West" type="text" formControlName="West" />
+
+            <label for="East">East: </label>
+            <input id="East" type="text" formControlName="East" />
+
+            <label for="GeofenceType">Geofence Type: </label>
+            <input id="GeofenceType" type="text" formControlName="GeofenceType" />
+
+            <label for="AddedDate">Added Date: </label>
+            <input id="AddedDate" type="text" formControlName="AddedDate" />
+
+            <label for="StrockColor">Strock Color: </label>
+            <input id="StrockColor" type="text" formControlName="StrockColor" />
+
+            <label for="StrockOpacity">Strock Opacity: </label>
+            <input id="StrockOpacity" type="text" formControlName="StrockOpacity" />
+
+            <label for="StrockWeight">Strock Weight: </label>
+            <input id="StrockWeight" type="text" formControlName="StrockWeight" />
+
+            <label for="FillColor">Fill Color: </label>
+            <input id="FillColor" type="text" formControlName="FillColor" />
+
+            <label for="FillOpacity">Fill Opacity: </label>
+            <input id="FillOpacity" type="text" formControlName="FillOpacity" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

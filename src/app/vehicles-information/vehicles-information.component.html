@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="form-container">
+        <h2>Add Vehicle Information</h2>
+        <form>
+            <div class="container d-flex justify-content-center align-items-center min-vh-100">
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let vehicleinfo of VehicleInformations">
+                        <div class="card mb-4">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Vehicle Type : {{ vehicleinfo.VehicleType }}</li>
+                                <li class="list-group-item">Vehicle Number : {{ vehicleinfo.VehicleNumber }}</li>
+                                <li class="list-group-item">Last Latitude : {{ vehicleinfo.LastLatitude }}</li>
+                                <li class="list-group-item">Last Longitude : {{ vehicleinfo.LastLongitude }}</li>
+                                <li class="list-group-item">Vehicle Make : {{ vehicleinfo.VehicleMake }}</li>
+                                <li class="list-group-item">Vehicle Model : {{ vehicleinfo.VehicleModel }}</li>
+                                <li class="list-group-item">Phone Number : {{ vehicleinfo.PhoneNumber }}</li>
+
+                                <button class="update-button" (click)="updateDriver(vehicleinfo)">
+                                    Edit
+                                </button>
+                                <button class="delete-button" (click)="deleteDriver(vehicleinfo.vehicleId)">
+                                    Delete
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

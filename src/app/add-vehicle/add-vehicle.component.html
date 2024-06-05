@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="form-container">
+        <h2>Add Vehicle</h2>
+        <form [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+            <label for="vehicleType">Vehicle Type: </label>
+            <input id="vehicleType" type="text" formControlName="vehicleType" />
+
+            <label for="vehicleNumber">Vehicle Number : </label>
+            <input id="vehicleNumber" type="text" formControlName="vehicleNumber" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

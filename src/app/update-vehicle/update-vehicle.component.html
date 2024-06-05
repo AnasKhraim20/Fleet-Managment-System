@@ -1,0 +1,9 @@
+<form [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+    <label for="VehicleType">Vehicle Type: </label>
+    <input id="VehicleType" type="text" formControlName="VehicleType" />
+
+    <label for="VehicleNumber">Vehicle Number: </label>
+    <input id="VehicleNumber" type="text" formControlName="VehicleNumber" />
+
+    <button type="submit">Update</button>
+</form>

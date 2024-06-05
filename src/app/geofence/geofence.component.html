@@ -1,0 +1,20 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let Geo of Geofence">
+            <div class="card mb-4">
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item">Geofence Type : {{ Geo.GeofenceType }}</li>
+                    <li class="list-group-item">AddedDate : {{ Geo.AddedDate }}</li>
+                    <li class="list-group-item">StrockColor : {{ Geo.StrockColor }}
+                    <li class="list-group-item">StrockOpacity : {{ Geo.StrockOpacity }}</li>
+                    <li class="list-group-item">StrockWeight : {{ Geo.StrockWeight }}</li>
+                    <li class="list-group-item">FillColor : {{ Geo.FillColor }}
+                    <li class="list-group-item">FillOpacity : {{ Geo.FillOpacity }}
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

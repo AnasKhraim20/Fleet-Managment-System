@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="form-container">
+        <h2>Add Circular Geofence</h2>
+        <form [formGroup]="circulargeofenceForm" (ngSubmit)="onSubmit()">
+            <label for="GeofenceType">Radius: </label>
+            <input id="GeofenceType" type="text" formControlName="radius" />
+
+            <label for="latitude">Latitude: </label>
+            <input id="latitude" type="text" formControlName="latitude" />
+
+            <label for="longitude">Longitude: </label>
+            <input id="longitude" type="text" formControlName="longitude" />
+
+            <label for="geofenceType">Geofence Type: </label>
+            <input id="geofenceType" type="text" formControlName="geofenceType" />
+
+            <label for="addedDate">Added Date: </label>
+            <input id="addedDate" type="text" formControlName="addedDate" />
+
+            <label for="strockColor">Strock Color: </label>
+            <input id="strockColor" type="text" formControlName="strockColor" />
+
+            <label for="strockOpacity">Strock Opacity: </label>
+            <input id="strockOpacity" type="text" formControlName="strockOpacity" />
+
+            <label for="strockWeight">Strock Weight: </label>
+            <input id="strockWeight" type="text" formControlName="strockWeight" />
+
+            <label for="fillColor">Fill Color: </label>
+            <input id="fillColor" type="text" formControlName="fillColor" />
+
+            <label for="fillOpacity">Fill Opacity: </label>
+            <input id="fillOpacity" type="text" formControlName="fillOpacity" />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

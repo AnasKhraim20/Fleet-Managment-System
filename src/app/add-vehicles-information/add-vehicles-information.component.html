@@ -1,0 +1,20 @@
+<form [formGroup]="VehicleInformationForm" (ngSubmit)="onSubmit()">
+
+    <label for="vehicleId">Vehicle ID: </label>
+    <input id="vehicleId" type="text" formControlName="vehicleId" />
+
+    <label for="driverId">Driver ID: </label>
+    <input id="driverId" type="text" formControlName="driverId" />
+
+    <label for="vehicleMaker">Vehicle Maker : </label>
+    <input id="vehicleMaker" type="text" formControlName="vehicleMaker" />
+
+    <label for="vehicleMode">Vehicle Mode : </label>
+    <input id="vehicleMode" type="text" formControlName="vehicleMode" />
+
+    <label for="purchaseDate">Purchase Date : </label>
+    <input id="purchaseDate" type="text" formControlName="purchaseDate" />
+
+
+    <button type="submit">Submit</button>
+</form>

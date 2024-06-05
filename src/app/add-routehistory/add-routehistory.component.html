@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="form-container">
+        <h2>Add New Epoch</h2>
+        <form [formGroup]="RouteHistoryForm" (ngSubmit)="onSubmit()">
+
+            <label for="vehicleId">vehicleId : </label>
+            <input id="vehicleId" type="text" formControlName="vehicleId"><br>
+
+            <label for="vehicleDirection">vehicleDirection : </label>
+            <input id="vehicleDirection" type="text" formControlName="vehicleDirection"><br>
+
+            <label for="status">status : </label>
+            <input id="status" type="text" formControlName="status" /><br>
+
+            <label for="vehicleSpeed">vehicleSpeed : </label>
+            <input id="vehicleSpeed" type="text" formControlName="vehicleSpeed" /><br>
+
+            <label for="epoch">epoch : </label>
+            <input id="epoch" type="text" formControlName="epoch" /><br>
+
+            <label for="latitude">latitude : </label>
+            <input id="latitude" type="text" formControlName="latitude" /><br>
+
+            <label for="longitude">longitude : </label>
+            <input id="longitude" type="text" formControlName="longitude" /><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

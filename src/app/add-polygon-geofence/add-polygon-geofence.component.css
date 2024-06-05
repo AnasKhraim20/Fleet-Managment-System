@@ -1,0 +1,75 @@
+body {
+    background-color: #2d2d2d;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items at the start of the container */
+    background-color: #f0f0f0;
+    /* Light background for contrast */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: 0;
+    /* Reduce margin-top to decrease space between navbar and form */
+}
+
+.form-container {
+    background-color: #000;
+    /* Black background */
+    padding: 20px;
+    border-radius: 15px;
+    /* Rounded corners */
+    color: #fff;
+    /* White text color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Optional: Add a shadow for better visual effect */
+    width: 600px;
+    height: auto 500px;
+    /* Increase the width of the form */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+}
+
+.form-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
